@@ -29,3 +29,5 @@ Route::post('/acara', 'AcaraController@insert');
 Route::put('/acara', 'AcaraController@update');
 Route::get('/edit-acara/{id}', 'AcaraController@updateForm');
 Route::get('/delete-acara/{id}', 'AcaraController@delete');
+Route::get('/view-data/{id}', 'TransactionController@viewData');
+Route::get('/delete-member/{id}', 'CustomerController@delete');

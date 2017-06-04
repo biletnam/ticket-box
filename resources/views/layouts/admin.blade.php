@@ -105,7 +105,7 @@
 
   </div>
 </div>
-@if(isset($transaction))
+@if(isset($transaction) || isset($customer))
 <div id="myModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -139,6 +139,26 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         <a href="#" class="btn btn-danger button-hapus-acara">Hapus</a>
+      </div>
+    </div>
+  </div>
+</div>
+@endif
+
+@if(isset($customer))
+<div id="delete-member" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Hapus Member</h4>
+      </div>
+      <div class="modal-body">
+        <p>Apakah anda yakin untuk menghapus member ini?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <a href="#" class="btn btn-danger button-hapus-member">Hapus</a>
       </div>
     </div>
   </div>

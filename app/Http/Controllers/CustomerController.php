@@ -46,4 +46,10 @@ class CustomerController extends Controller
 		$customer = Customer::where('nomor_identitas', $request->search)->orWhere('email', $request->search)->first();
 		return $customer;
 	}
+
+	public function delete($id) {
+		$customer = Customer::find($id);
+		$customer->delete();
+		return redirect('home');
+	}
 }

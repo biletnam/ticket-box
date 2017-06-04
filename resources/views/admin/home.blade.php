@@ -13,7 +13,7 @@
          <div class="content table-responsive">
            <table class="table table-bordered table-condensed text-center">
              <thead>
-               <td>Nama Peserta</td>
+               <td>Nama member</td>
                <td>Email</td>
                <td>Nama Acara</td>
                <td>Pembayaran</td>
@@ -28,7 +28,7 @@
                  {!! ($transaction->status_pembayaran) ?  "<p class='status-sudah'>Lunas</p>" : '<p class="status-belum">Belum Lunas</p>' !!}
                </td>
                <td>
-                 <a href="{{ url("/view-data/$transaction->id") }}" class="btn btn-danger"><i class="glyphicon glyphicon-eye-open"></i></a>                
+                 <a href="/view-data/{!! $transaction->customer->id !!}" class="btn btn-danger"><i class="glyphicon glyphicon-eye-open"></i></a>                
                  <a href="{{ url("/edit-data/$transaction->id") }}" class="btn btn-danger"><i class="glyphicon glyphicon-edit"></i></a>
                  <button type="button" class="btn btn-hapus hapus-transaksi" data-toggle="modal" data-target="#myModal" data-id="{!! $transaction->id !!}"><i class="glyphicon glyphicon-trash"></i></button>
                </td>

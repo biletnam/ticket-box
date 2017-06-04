@@ -18,7 +18,7 @@ class TransactionController extends Controller
 	public function delete(Request $request, $id) {
 		$transaction = Transaction::find($id);
 		$transaction->delete();
-		return redirect('home');
+		return back();
 	}
 
 	public function updateForm($id) {
@@ -45,5 +45,10 @@ class TransactionController extends Controller
 		$transaction->status_pembayaran = $status_pembayaran;
 		$transaction->save();
 		return redirect('home');
+	}
+
+	public function viewData($id) {
+		$customer = Customer::find($id);
+		return view('admin.view-data', compact('customer'));
 	}
 }

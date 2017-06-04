@@ -19,8 +19,8 @@ class CreateTransactionsTable extends Migration
             $table->integer('acara_id')->unsigned();
             $table->integer('jumlah_pembayaran');
             $table->boolean('status_pembayaran')->default(0);
-            $table->foreign('user_id')->references('id')->on('customers');
-            $table->foreign('acara_id')->references('id')->on('acara');
+            $table->foreign('user_id')->references('id')->on('customers')->onDelete('cascade');
+            $table->foreign('acara_id')->references('id')->on('acara')->onDelete('cascade');
         });
     }
 
