@@ -1,0 +1,87 @@
+.btn-primary{
+	background-color: #673AB7;
+	color: white;
+}
+.btn-hapus{
+	background-color: #C62828;
+	color: white;
+	border-color: #C62828;
+}
+.btn-hapus:hover{
+	background-color: #C62848;
+	color: white;
+	border-color: #C62848;
+}
+.btn-info:hover{
+	background-color: #232c3a;
+	color: white;
+}
+ul.nav li{
+	letter-spacing: 2px;
+}
+.push{
+	margin-left: 100px;
+}
+.sidebar:after, body > .navbar-collapse:after{
+	background: linear-gradient(to bottom, #05080c 30%, #212020 100%);
+	background-image: linear-gradient(rgb(27, 22, 22) 0%, rgb(33, 32, 32) 100%);
+	background-position-x: initial;
+	background-position-y: initial;
+	background-size: 150% 150%;
+	background-repeat-x: initial;
+	background-repeat-y: initial;
+	background-attachment: initial;
+	background-origin: initial;
+	background-clip: initial;
+	background-color: initial;
+
+}
+.sidebar .nav li.active > a{
+	background-color: #ba0133;
+}
+.judul{
+	margin-top: 22px;
+	font-size: 15px;
+	letter-spacing: 2px;
+}
+.username{
+	letter-spacing: 2px;
+}
+hr{
+	margin-bottom: 0;
+}
+.status-sudah {
+	display: block;
+	padding: 3px;
+	background-color: #2ecc71;	
+	border: 2px solid #2ecc71;
+	opacity: 0.8;
+	border-radius: 4px;
+	color: #FFF;
+	margin: 0;
+}
+
+.status-belum {
+	display: block;
+	padding: 3px;
+	background-color: #C62828;	
+	border: 2px solid #C62828;
+	opacity: 0.8;
+	border-radius: 4px;
+	color: #FFF;
+	margin: 0;
+}
+
+.detail-acara {
+	margin: 20px;
+}
+
+body.modal-open .wrapper{
+	-webkit-filter: blur(4px);
+	-moz-filter: blur(4px);
+	-o-filter: blur(4px);
+	-ms-filter: blur(4px);
+	filter: blur(4px);
+	filter: url("https://gist.githubusercontent.com/amitabhaghosh197/b7865b409e835b5a43b5/raw/1a255b551091924971e7dee8935fd38a7fdf7311/blur".svg#blur);
+	filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='4');
+}
